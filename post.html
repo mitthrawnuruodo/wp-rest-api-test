@@ -35,6 +35,8 @@ function displayPost (data) {
   //const excerpt = data.excerpt.rendered;
   const excerpt = data.content.rendered;
   const link = data.link;
+
+  // Getting the image the hard way
   getImageURL(data.featured_media);  
 
   // Using ?_embed=wp:featuredmedia (and not the addImage() function below)?
